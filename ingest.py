@@ -4,7 +4,7 @@ import PyPDF2
 
 def process_txt_file(filepath):
     """
-    Читает TXT файл, извлекает метаданные из первых строк и возвращает текст.
+    Reads a TXT file, extracts metadata from the first lines, and returns the text.
     """
     metadata = {}
     content_lines = []
@@ -13,7 +13,7 @@ def process_txt_file(filepath):
         lines = file.readlines()
 
         for line in lines:
-            # Ищем метаданные в начале файла
+            # Look for metadata at the beginning of the file
             if line.startswith('Title:'):
                 metadata['title'] = line.replace('Title:', '').strip()
             elif line.startswith('Source:'):
@@ -21,11 +21,11 @@ def process_txt_file(filepath):
             elif line.startswith('Date:'):
                 metadata['date'] = line.replace('Date:', '').strip()
             else:
-                # Если это не метаданные, значит это основной текст
-                if line.strip():  # Игнорируем пустые строки
+                # If it's not metadata, it's the main text
+                if line.strip():  # Ignore empty lines
                     content_lines.append(line.strip())
 
-    # Если название не указано внутри, берем имя файла
+    # If title is not provided inside, use the filename
     if 'title' not in metadata:
         metadata['title'] = os.path.basename(filepath)
 
@@ -37,7 +37,7 @@ def process_txt_file(filepath):
 
 def process_pdf_file(filepath):
     """
-    Читает PDF файл, извлекает текст и базовые метаданные (название файла).
+    Reads a PDF file, extracts text and basic metadata (filename).
     """
     metadata = {'source': 'Wikipedia PDF'}
     metadata['title'] = os.path.basename(filepath).replace('.pdf', '')
@@ -58,40 +58,40 @@ def process_pdf_file(filepath):
 
 def load_all_documents(data_folder):
     """
-    Проходит по всей папке data/, определяет тип файла и применяет нужную функцию.
+    Iterates through the data/ folder, determines the file type, and applies the appropriate function.
     """
     all_documents = []
 
-    # Перебираем все файлы в папке
+    # Iterate over all files in the folder
     for filename in os.listdir(data_folder):
         filepath = os.path.join(data_folder, filename)
 
         if filename.endswith('.txt'):
-            print(f"Загрузка TXT: {filename}")
+            print(f"Loading TXT: {filename}")
             doc = process_txt_file(filepath)
             all_documents.append(doc)
 
         elif filename.endswith('.pdf'):
-            print(f"Загрузка PDF: {filename}")
+            print(f"Loading PDF: {filename}")
             doc = process_pdf_file(filepath)
             all_documents.append(doc)
 
     return all_documents
 
 
-# Блок для проверки работы скрипта
+# Block to test the script
 if __name__ == "__main__":
     folder_path = "./data"
 
-    # Проверяем, существует ли папка
+    # Check if the folder exists
     if not os.path.exists(folder_path):
-        print(f"Ошибка: Папка {folder_path} не найдена. Создай ее и положи туда файлы.")
+        print(f"Error: Folder {folder_path} not found. Create it and put files there.")
     else:
         documents = load_all_documents(folder_path)
-        print(f"\nУспешно загружено документов: {len(documents)}")
+        print(f"\nSuccessfully loaded documents: {len(documents)}")
 
-        # Выведем превью первого документа, чтобы проверить, что всё работает
+        # Output a preview of the first document to check if everything works
         if documents:
-            print("\n--- Превью первого документа ---")
-            print(f"Метаданные: {documents[0]['metadata']}")
-            print(f"Начало текста: {documents[0]['text'][:200]}...")
+            print("\n--- First document preview ---")
+            print(f"Metadata: {documents[0]['metadata']}")
+            print(f"Text start: {documents[0]['text'][:200]}...")
