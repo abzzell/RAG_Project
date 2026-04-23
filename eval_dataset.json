@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is Vibranium and where did it come from?",
+    "expected_answer": "Vibranium is a rare meteoric ore that came from a meteorite that crashed in Wakanda 1,000,000 years ago.",
+    "context_source": "Vibranium"
+  },
+  {
+    "question": "Who created the Mighty Avengers?",
+    "expected_answer": "Brian Michael Bendis and artist Frank Cho created the Mighty Avengers.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "What is Mjolnir made of?",
+    "expected_answer": "Mjolnir is made of the mystical metal Uru.",
+    "context_source": "Mjolnir"
+  },
+  {
+    "question": "Who provides the headquarters for the Avengers?",
+    "expected_answer": "Tony Stark (Iron Man) provides the Avengers Mansion as their headquarters.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "How do I bake a chocolate cake?",
+    "expected_answer": "I cannot find this in the provided documents.",
+    "context_source": "None"
+  },
+  {
+    "question": "Who created Captain America?",
+    "expected_answer": "Captain America was created by Joe Simon and Jack Kirby.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "What is Captain America's civilian identity?",
+    "expected_answer": "His civilian identity is Steven 'Steve' Rogers.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "How was Steve Rogers enhanced to physical perfection?",
+    "expected_answer": "He was enhanced by an experimental 'super-soldier serum'.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "Who was Captain America's sidekick during World War II?",
+    "expected_answer": "His sidekick was Bucky Barnes.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "In what year was Captain America Comics discontinued?",
+    "expected_answer": "It was discontinued in 1950.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "Who portrayed Steve Rogers in the Marvel Cinematic Universe?",
+    "expected_answer": "The character is portrayed by actor Chris Evans.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "What was the first Marvel character to appear in a medium outside of comic books?",
+    "expected_answer": "Captain America was the first, appearing in a 1944 movie serial.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "Who co-created Iron Man?",
+    "expected_answer": "Iron Man was co-created by Stan Lee, Larry Lieber, Don Heck, and Jack Kirby.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "In which comic book and year did Iron Man first appear?",
+    "expected_answer": "He first appeared in Tales of Suspense #39 in 1962.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "What is Iron Man's real name and what company does he run?",
+    "expected_answer": "His real name is Anthony Edward 'Tony' Stark and he runs Stark Industries.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "Why did Tony Stark build his first Iron Man armor?",
+    "expected_answer": "He built it to escape his captors after sustaining a heart wound in a war zone.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "What abilities do Iron Man's suits of armor grant him?",
+    "expected_answer": "They grant superhuman strength, flight, energy projection, and other abilities.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "Who are Iron Man's supporting characters that became superheroes?",
+    "expected_answer": "James Rhodes (War Machine) and Riri Williams (Ironheart).",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "Who is considered Iron Man's archenemy?",
+    "expected_answer": "His archenemy is the Mandarin.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "Which actor popularized Iron Man in the Marvel Cinematic Universe?",
+    "expected_answer": "Robert Downey Jr. portrayed Tony Stark/Iron Man.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "Who were the original members of the Avengers?",
+    "expected_answer": "The original members were Iron Man, Ant-Man, Hulk, Thor, and Wasp.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "How did Captain America join the Avengers?",
+    "expected_answer": "He was discovered trapped in ice in issue #4 and joined after being revived.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "What is the nickname given to the Avengers?",
+    "expected_answer": "They are labeled 'Earth's Mightiest Heroes'.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "How do the Avengers differ from the X-Men in terms of their creation?",
+    "expected_answer": "Avengers operate independently but occasionally assemble, while X-Men were created specifically to be part of a team.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "Name some lesser-known characters who have been part of the Avengers.",
+    "expected_answer": "Quicksilver, Wonder Man, and Tigra.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "When did the Avengers film series from Marvel Studios begin?",
+    "expected_answer": "The film series began in 2008.",
+    "context_source": "Avengers_(comics)"
+  },
+  {
+    "question": "Who is the villain Red Skull?",
+    "expected_answer": "Red Skull is an agent of the Axis powers and a frequent villainous opponent of Captain America.",
+    "context_source": "Captain_America"
+  },
+  {
+    "question": "What themes did Iron Man stories explore in the 1970s?",
+    "expected_answer": "Themes such as civil unrest, technological advancement, corporate espionage, alcoholism, and governmental authority.",
+    "context_source": "Iron_Man"
+  },
+  {
+    "question": "What is the capital of France?",
+    "expected_answer": "I cannot find this in the provided documents.",
+    "context_source": "None"
+  },
+  {
+    "question": "What was the pre-training task of BERT?",
+    "expected_answer": "I cannot find this in the provided documents.",
+    "context_source": "None"
+  }
+]

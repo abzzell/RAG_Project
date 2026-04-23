@@ -5,16 +5,13 @@ from langchain_core.prompts import PromptTemplate
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
-# Load environment variables from .env file (to hide our API key)
 load_dotenv()
 
-# We need the path to our database
 CHROMA_PATH = "chroma_db"
 
 
 def generate_answer(query):
     # 1. Initialize the LLM (using Groq's fast Llama 3 model)
-    # The API key is automatically picked up from the GROQ_API_KEY variable in .env
     llm = ChatGroq(model_name="llama-3.1-8b-instant", temperature=0.1)
 
     # 2. Initialize database and search for relevant chunks

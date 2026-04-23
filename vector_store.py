@@ -56,10 +56,6 @@ def test_search(query):
 
 
 if __name__ == "__main__":
-    # If the database doesn't exist yet, create it
     if not os.path.exists(CHROMA_PATH):
         create_vector_db()
 
-    # Test the search
-    test_search("What is Vibranium made of?")
-    test_search("Who created the Infinity Stones?")

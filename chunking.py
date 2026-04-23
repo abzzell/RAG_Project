@@ -15,10 +15,8 @@ def strategy_1_fixed_size(documents, chunk_size=500, chunk_overlap=50):
 
     all_chunks = []
     for doc in documents:
-        # Split the document's text
         chunks = text_splitter.split_text(doc['text'])
 
-        # Save chunks along with their source document metadata
         for i, chunk in enumerate(chunks):
             all_chunks.append({
                 'text': chunk,
