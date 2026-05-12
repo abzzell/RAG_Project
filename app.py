@@ -12,9 +12,41 @@ load_dotenv()
 CHROMA_PATH = "chroma_db"
 
 # --- Page Configuration ---
-st.set_page_config(page_title="RAG Chatbot", page_icon="🤖", layout="centered")
-st.title("🤖 RAG Chatbot (Knowledge Base)")
-st.markdown("Ask me anything based on the uploaded documents!")
+st.set_page_config(page_title="MARVEL RAG", page_icon="🦸‍♂️", layout="centered")
+
+# --- Custom Marvel CSS ---
+st.markdown("""
+<style>
+    /* Marvel-style Title */
+    h1 {
+        background-color: #EC1D24; /* Official Marvel Red */
+        color: #FFFFFF !important;
+        text-align: center;
+        font-family: 'Impact', 'Arial Black', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        margin-bottom: 0px;
+    }
+
+    /* Subtitle text */
+    .subtitle {
+        text-align: center; 
+        font-weight: bold; 
+        color: #555;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# --- Header ---
+st.title("MARVEL KNOWLEDGE BASE")
+st.markdown("<div class='subtitle'>Ask me anything about the Marvel Universe!</div>", unsafe_allow_html=True)
+st.divider()
 
 
 # --- Load Models (Cached for speed) ---
@@ -40,7 +72,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # --- Chat Input & Processing ---
-if prompt := st.chat_input("Ask a question..."):
+if prompt := st.chat_input("Ask a question about Marvel..."):
     # 1. Display user message
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
@@ -48,7 +80,7 @@ if prompt := st.chat_input("Ask a question..."):
 
     # 2. Generate and display assistant response
     with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
+        with st.spinner("Accessing S.H.I.E.L.D. Database..."):
             # Retrieve relevant chunks from ChromaDB
             results = vector_db.similarity_search(prompt, k=5)
 
