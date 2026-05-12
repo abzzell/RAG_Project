@@ -6,6 +6,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # Load environment variables (hides API key)
+# hehe
 load_dotenv()
 
 # Constants
