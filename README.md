@@ -58,3 +58,4 @@ Detailed experiments with chunk sizes, k-parameters, and overlap are documented 
 This project involves a comparative study of:
 - **BERT (Encoder-only):** Used for creating semantic embeddings (Retrieval).
 - **GPT-style (Decoder-only):** Used for generating natural language responses (Generation).
+<img width="1271" height="843" alt="image" src="https://github.com/user-attachments/assets/9efe9dbb-e93a-4e57-82d7-ec5b867a8167" />
